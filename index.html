@@ -23,14 +23,27 @@
 			<h2>This is just a section</h2>
 		</section>
 		<article id="article">
-			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, quo ea illum eos corporis sequi. Id, incidunt voluptas distinctio alias quibusdam tenetur facere recusandae sapiente unde quae hic mollitia corrupti ab dolorem dicta facilis nisi consequatur quidem voluptatem! Reprehenderit, dicta pariatur? Inventore sed ea autem, dolorum aliquam ipsa labore excepturi, amet laboriosam consequuntur exercitationem! Hic ex, laudantium consequuntur atque nihil tenetur, explicabo voluptates iure cupiditate at nisi laborum non minima tempore totam dicta accusantium dolore laboriosam. Quo, architecto. Iure vel placeat amet harum. Magnam quasi, id impedit officia suscipit consequuntur ea vero alias, in voluptatem tenetur. Eum quod consequatur id?
-			<form action="placeholder" method="post" class="form">
-					<label for="fname">First name:</label><br>
-					<input type="text" id="fname" name="fname" placeholder="First name" class="txtInput"><br>
-					<label for="lname">Last name:</label><br>
-					<input type="text" id="lname" name="lname" placeholder="Last name" class="txtInput"><br>
-					<input type="submit" id="submit">
-			</form>
+			<button id="get-weather-btn" onclick="showWeather()">Get Weather</button> 
+			<select id="selector">
+				<option value=""></option>
+				<option value="New York">New York</option>
+				<option value="Los Angeles">Los Angeles</option>
+				<option value="Chicago">Chicago</option>
+				<option value="Paris">Paris</option>
+				<option value="Tokyo">Tokyo</option>
+				<option value="London">London</option>
+			</select>
+			<br>
+			<div class="weather-forecast">
+				<img id="weather-icon"></img>
+				<span id="main-temperature">Main Temp: </span>
+				<span id="feels-like">Feels Like:</span>
+				<span id="humidity">Humidity:</span>
+				<span id="wind">Wind: </span>
+				<span id="wind-gust">Wind gust: </span>
+				<span id="weather-main">Weather main:</span>
+				<span id="location">Location: </span>
+			</div>
 		</article>
 		<aside id="aside">
 			<h2>This is header for aside</h2>
@@ -40,5 +53,6 @@
 		<a href="#">Contact Us</a> |
 		<a href="#">Lorem Ispum</a>
 	</footer>
+	<script type="module" src="scripts/main.js"></script>
 </body>
 </html>
